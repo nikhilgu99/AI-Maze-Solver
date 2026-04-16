@@ -13,7 +13,7 @@ python main.py -g 101
 python main.py -g 101 -a dfs
 ```
 NOTE: This generates a maze and directly solves it at once  
-NOTE: To choose a heuristic for astar, use the -he or --heuristic flag (manhattan/euclidean)
+NOTE: To choose a heuristic for astar, add the -he or --heuristic flag (manhattan/euclidean)
 
 
 ##### To use your own maze, pass it with the -i or --image flag:
@@ -25,13 +25,13 @@ python main.py -i maze_101.bmp -a astar
 
 ##### To visualize any of the traditional search algorithms, use the -v or --visualize flag:
 ```
-python main.oy -i maze_101.bmp -a dfs -v
+python main.py -i maze_101.bmp -a dfs -v
 ```
 NOTE: This will significantly slow down execution time!
 
 
 
-##### To benchmark the algorithms, run benchmark.py, this will generate and plot automatically:
+##### To benchmark the algorithms, run benchmark.py, this will generate mazes and plot results automatically:
 ```
 python benchmark.py
 ```
@@ -51,5 +51,5 @@ python benchmark.py
 
 
 ### Other Notes
-- The benchmark folder contains a sample output, complete with the generated mazes and benchmark results. I have added the solved versions to show the solutions.
+- The benchmark folder contains a sample output, complete with the generated mazes and benchmark results. I have added the solved versions here to show the solutions.
 - In order to run this project, a few external libraries are required, they can be installed with: `pip install numpy opencv-python gymnasium pandas matplotlib`
